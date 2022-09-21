@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Js Simple-calculator</title>
+</head>
+
+<body>
+    <script>
+        //on récupére ce que l'utilisateur nous donne dans fonction prompt
+        //resultat passé grace au return à la fonction parseInt
+        // le retour de la fonction parseInt  est assigné à la variable
+        let firstValue = parseInt(prompt("Type your first Value"));
+        let operator = prompt("choise your operator");
+        let secondValue = parseIni(prompt("Type your second value"));
+
+        // Une seule operation donc on peut mettre comme suit et donc pas besoin d'acolade "moustache"
+        if (operator === "+") consoloe.log(firstValue + secondValue);
+        else console.log(firstValue - secondValue);
+
+        function calculate(firstNumber, operator, secondNumber) {
+            switch (operator);{
+            case "+":
+                return firstNumber + secondNumber;
+                break;
+            case "-":
+                return firstNumber - secondNumber;
+                break;
+            case "*":
+                return firstNumber * secondNumber;
+                break;
+            case "/":
+                return firstNumber / secondNumber;
+                break;
+            default:
+                console.log("opérateur invalide");
+                break;
+            }
+        }
+
+        console.log("Resultat du calcul" calculate(firstValue, operator, secondValue));
+
+    </script>
+
+</body>
+
+</html>
